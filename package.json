@@ -1,0 +1,51 @@
+{
+  "name": "apiQueryStringHelper",
+  "version": "1.0.0",
+  "description": "Middleware that inspects the query string for a `fields` and `sort` key and will validate them against a supplied array. It will then append them to a name spaced request object as arrays",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && find ./tests -name '*.test.js' | xargs istanbul cover _mocha",
+    "test-report": "npm test; open -a 'Google Chrome' coverage/lcov-report/index.html",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bstanley0811/node-apiQueryStringHelper"
+  },
+  "keywords": [
+    "api query helper",
+    "api query string"
+  ],
+  "author": {
+    "name": "Bryan Stanley",
+    "email": "bstanley.0811@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bstanley0811/node-apiQueryStringHelper/issues"
+  },
+  "homepage": "https://github.com/bstanley0811/node-apiQueryStringHelper",
+  "standard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "coveralls": "^2.11.9",
+    "express": "^4.13.4",
+    "istanbul": "0.4.3",
+    "mocha": "^2.4.5",
+    "standard": "6.0.8",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "array-subtract": "2.0.0"
+  }
+}
