@@ -7,7 +7,7 @@ const expect = require('chai').expect
 const app = express()
 const validFields = ['id', 'userId', 'name', 'createdAt']
 
-app.get('/user', apiQueryStringHelper.init(validFields), function (req, res) {
+app.get('/user', apiQueryStringHelper(validFields), function (req, res) {
   res.status(200).json({ middleWareData: req.apiQueryStringHelper })
 })
 
