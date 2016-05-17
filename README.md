@@ -1,3 +1,4 @@
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Build Status](https://travis-ci.org/bstanley0811/node-apiQueryStringHelper.svg?branch=master)](https://travis-ci.org/bstanley0811/node-apiQueryStringHelper)
 [![Coverage Status](https://coveralls.io/repos/bstanley0811/node-apiQueryStringHelper/badge.svg?branch=master)](https://coveralls.io/repos/bstanley0811/node-apiQueryStringHelper/?branch=master)
 
