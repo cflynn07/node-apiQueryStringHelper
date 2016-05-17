@@ -10,7 +10,7 @@ exclusion; exclusion negated by a `-` prepending the value.
 ## Usage
 When calling your routes, add the middleware
 ```js
-require('apiQueryStringHelper')
+const apiQueryStringHelper = require('apiQueryStringHelper')
 
 const dataKeys = ['id', 'userId', 'name', 'createdAt']
 
