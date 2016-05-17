@@ -15,7 +15,7 @@ const apiQueryStringHelper = require('apiQueryStringHelper')
 const dataKeys = ['id', 'userId', 'name', 'createdAt']
 
 // implement the middleware, passing in your valid data keys
-express.get('/some/route', apiQueryStringHelper.init(dataKeys), require('lib/my/route/handler'))
+express.get('/some/route', apiQueryStringHelper(dataKeys), require('lib/my/route/handler'))
 ```
 
 Now, you can reference the `apiQueryStringHelper` object, in your route handler
