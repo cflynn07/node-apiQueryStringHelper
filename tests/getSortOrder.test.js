@@ -44,7 +44,7 @@ describe('getSortOrder', () => {
         .end((err, res) => {
           if (err) { throw err }
           expect(res.body).to.have.all.keys(['message'])
-          expect(res.body.message).to.equal('invalid sort field values: invalidField')
+          expect(res.body.message).to.equal('invalid sort field values: -invalidField')
           done()
         })
     })
@@ -56,7 +56,7 @@ describe('getSortOrder', () => {
         .end((err, res) => {
           if (err) { throw err }
           expect(res.body).to.have.all.keys(['message'])
-          expect(res.body.message).to.equal('invalid sort field values: invalidField')
+          expect(res.body.message).to.equal('invalid sort field values: -invalidField')
           done()
         })
     })
