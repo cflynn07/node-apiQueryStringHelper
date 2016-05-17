@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/bstanley0811/node-apiQueryStringHelper.svg?branch=master)](https://travis-ci.org/bstanley0811/node-apiQueryStringHelper)
 [![Coverage Status](https://coveralls.io/repos/bstanley0811/node-apiQueryStringHelper/badge.svg?branch=master)](https://coveralls.io/repos/bstanley0811/node-apiQueryStringHelper/?branch=master)
 
-
 # node-queryStringHelper
 Middleware that inspects the request query string for a `fields` and `sort` key.  If found, the middleware will validate them against a supplied array.  It will then append them to a `req.apiQueryStringHelper` object as arrays.  The `fields` and `sort` keys can use inclusion and exclusion; exclusion negated by a `-` prepending the value.
 
