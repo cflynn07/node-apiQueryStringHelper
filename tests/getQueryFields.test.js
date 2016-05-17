@@ -32,7 +32,7 @@ describe('getQueryFields', () => {
         .end((err, res) => {
           if (err) { throw err }
           expect(res.body).to.have.all.keys(['message'])
-          expect(res.body.message).to.equal('invalid query fields values: invalidField')
+          expect(res.body.message).to.equal('invalid query field values: invalidField')
           done()
         })
     })
@@ -44,7 +44,7 @@ describe('getQueryFields', () => {
         .end((err, res) => {
           if (err) { throw err }
           expect(res.body).to.have.all.keys(['message'])
-          expect(res.body.message).to.equal('invalid query fields values: invalidField1, invalidField2')
+          expect(res.body.message).to.equal('invalid query field values: invalidField1, invalidField2')
           done()
         })
     })
